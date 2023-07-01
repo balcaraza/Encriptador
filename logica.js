@@ -52,4 +52,5 @@ function desencriptar(stringDesencriptada) {
       stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0]);
     }
   }
+  return stringDesencriptada;
 }
