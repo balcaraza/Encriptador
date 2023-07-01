@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--informacion backend para la pagina-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador Alura Challenge</title>
+    <!--Se define el titulo en la pestaña del navegador-->
+
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    
+    <header>
+      <img class="logo" src="Recursos/Logo.png" alt="Logo de Alura" />
+      <h1>Encriptador de texto</h1>
+    </header>
+    <main>
+      <section class="contenedor">
+        <div class="item">
+          <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+          <!--Aqui se ingresa el texto a ser codificado-->
+          <p class="info">Solo letras minusculas y sin acentos</p>
+
+          <div class="botones">
+          
+            <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+            <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+          </div>
+
+        </div>
+
+        <div class="item">
+          <textarea class="mostrar-mensaje" cols="20" rows="10"></textarea>
+
+         
+
+        </div>
+
+      </section>
+
+    </main>
+    
+    <footer>
+      <p class="copyright">&copy By Balam Alcaraz </p>
+  </footer>
+    <script src="logica.js"></script>
+  </body>
+</html>
